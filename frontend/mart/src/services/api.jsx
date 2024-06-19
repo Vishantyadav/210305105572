@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000', // Replace with your backend API URL
-});
+  baseURL: `http://20.244.56.144/test/companies/AMZ/categories/${categoryname}/products?top=${n}&minPrice=${minPrice}&maxPrice=${maxPrice};
+`});
 
 export const fetchProducts = async (category, top, minPrice, maxPrice) => {
   try {
